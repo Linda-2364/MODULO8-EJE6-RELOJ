@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital Futurista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="universe-bg">
+        <div class="stars"></div>
+        <div class="stars stars2"></div>
+        <div class="stars stars3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="clock-wrapper">
+            <!-- Tarjeta principal del reloj -->
+            <div class="clock-card">
+                <div class="glow-effect"></div>
+                
+                <div class="header">
+                    <div class="greeting" id="greeting">
+                        <i class="fas fa-sun"></i>
+                        <span>Buenos días</span>
+                    </div>
+                    <div class="timezone-info">
+                        <i class="fas fa-globe-americas"></i>
+                        <span id="timezone">UTC-5</span>
+                    </div>
+                </div>
+                
+                <div class="time-display">
+                    <div class="time" id="time">
+                        <span class="hours">00</span>
+                        <span class="colon">:</span>
+                        <span class="minutes">00</span>
+                        <span class="colon">:</span>
+                        <span class="seconds">00</span>
+                    </div>
+                    <div class="period" id="period">AM</div>
+                </div>
+                
+                <div class="date-display">
+                    <div class="date" id="date">
+                        <span class="weekday">Lunes</span>
+                        <span class="day">1</span>
+                        <span class="month">Enero</span>
+                        <span class="year">2024</span>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn format-btn" id="formatBtn">
+                        <i class="fas fa-clock"></i>
+                        <span id="formatText">Cambiar a 24h</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Panel de estadísticas -->
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="dayOfYear">001</div>
+                        <div class="stat-label">DÍA DEL AÑO</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="weekNumber">01</div>
+                        <div class="stat-label">SEMANA DEL AÑO</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="secondsToday">0</div>
+                        <div class="stat-label">SEGUNDOS HOY</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Barra de progreso del día -->
+            <div class="progress-container">
+                <div class="progress-label">
+                    <span>PROGRESO DEL DÍA</span>
+                    <span id="dayProgress">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer con información adicional -->
+        <div class="footer">
+            <div class="footer-item">
+                <i class="fas fa-microchip"></i>
+                <span>SISTEMA DE TIEMPO PRECISO</span>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-sync-alt"></i>
+                <span>ACTUALIZACIÓN EN TIEMPO REAL</span>
+            </div>
+            <div class="footer-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>PROTOCOLO SEGURO</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
